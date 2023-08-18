@@ -1,0 +1,21 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+  
+class Node:
+    def __init__(self):
+        self.root = None
+
+    def add(self, data):
+        new_node = Node(data)
+        if self.root == None:
+            self.root = new_node
+            return self.root
+        current_node = self.root
+
+        while current_node.next != None:
+            current_node = current_node.next
+        current_node.next = new_node
+        
